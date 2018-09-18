@@ -203,17 +203,17 @@ from orderdetails															 -- in the Amount_Paid column
 group by OrderID;
 
 
-CREATE TEMPORARY TABLE GETAMOUNT											 -- Let us create a temporary table GETAMOUNT
+CREATE TEMPORARY TABLE GETAMOUNT					     -- Let us create a temporary table GETAMOUNT
 select OrderID, sum(UnitPrice*Quantity) as Amount                            
 from orderdetails
 group by OrderID;
 
 
 UPDATE transactions                                                          -- INNER JOIN WITH GETAMOUNT to fill the 
-INNER JOIN GETAMOUNT ON transactions.Transaction_Order = GETAMOUNT.OrderID	 -- Amount_Paid column
+INNER JOIN GETAMOUNT ON transactions.Transaction_Order = GETAMOUNT.OrderID   -- Amount_Paid column
 SET transactions.Amount_Paid = GETAMOUNT.Amount;
 
-DROP TEMPORARY TABLE GETAMOUNT;												 -- DROP temp table after you're finished using it
+DROP TEMPORARY TABLE GETAMOUNT;						     -- DROP temp table after you're finished using it
 
 SELECT * FROM transactions;
 
