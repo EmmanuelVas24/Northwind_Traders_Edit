@@ -203,7 +203,7 @@ from orderdetails															 -- in the Amount_Paid column
 group by OrderID;
 
 
-CREATE TEMPORARY TABLE GETAMOUNT					     -- Let us create a temporary table GETAMOUNT
+CREATE TEMPORARY TABLE GETAMOUNT					     -- Create a temporary table GETAMOUNT
 select OrderID, sum(UnitPrice*Quantity) as Amount                            
 from orderdetails
 group by OrderID;
