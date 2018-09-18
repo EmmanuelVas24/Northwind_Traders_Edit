@@ -1,0 +1,1170 @@
+-- 1. List of Managers with all their Workers:
+
+Managers,Workers
+NULL,"Andrew Fuller"
+"Andrew Fuller","Laura Callahan"
+"Andrew Fuller","Nancy Davolio"
+"Andrew Fuller","Janet Leverling"
+"Andrew Fuller","Margaret Peacock"
+"Andrew Fuller","Steven Buchanan"
+"Steven Buchanan","Michael Suyama"
+"Steven Buchanan","Robert King"
+"Steven Buchanan","Anne Dodsworth"
+
+------------------------------------------------------------------------------------------------
+
+-- 2. Lists Managers with number of people working under them
+
+employeeID,Managers,Number_of_Workers
+2,"Andrew Fuller",5
+5,"Steven Buchanan",3
+
+------------------------------------------------------------------------------------------------
+
+3. product sales for 1997
+SELECT * FROM `northwind`.`product sales for 1997`;
+
+CategoryName,ProductName,ProductSales
+Beverages,"Cte de Blaye",49327.20000000
+"Dairy Products","Raclette Courdavault",35717.00000000
+Grains/Cereals,"Gnocchi di nonna Alice",34754.80000000
+Meat/Poultry,"Thringer Rostbratwurst",34461.12000000
+Produce,"Manjimup Dried Apples",24708.60000000
+"Dairy Products","Camembert Pierrot",21957.20000000
+Confections,"Tarte au sucre",21736.50000000
+Meat/Poultry,"Alice Mutton",18353.40000000
+Seafood,"Carnarvon Tigers",17250.00000000
+"Dairy Products",Gudbrandsdalsost,15962.40000000
+Produce,"Rssle Sauerkraut",13515.60000000
+Meat/Poultry,"Perth Pasties",13124.80000000
+Confections,"Gumbr Gummibrchen",12048.54000000
+"Dairy Products","Mozzarella di Giovanni",11995.20000000
+Beverages,"Ipoh Coffee",11518.40000000
+Confections,"Schoggi Schokolade",10974.00000000
+Condiments,"Sirop d'rable",10539.30000000
+Seafood,"Boston Crab Meat",10455.90000000
+"Dairy Products",Flotemysost,10238.30000000
+Condiments,"Louisiana Fiery Hot Pepper Sauce",9855.90000000
+Meat/Poultry,"Pt chinois",9854.40000000
+Produce,"Uncle Bob's Organic Dried Pears",9444.00000000
+Seafood,Ikura,9275.20000000
+"Dairy Products","Queso Manchego La Pastora",8854.00000000
+Meat/Poultry,"Mishi Kobe Niku",8536.00000000
+"Dairy Products","Gorgonzola Telino",8340.00000000
+Beverages,Lakkalikri,8211.60000000
+Confections,Pavlova,7916.25000000
+Confections,"Sir Rodney's Marmalade",7776.00000000
+Beverages,Chang,7600.00000000
+Condiments,Vegie-spread,7417.10000000
+Grains/Cereals,"Wimmers gute Semmelkndel",7408.10000000
+Seafood,"Inlagd Sill",7163.00000000
+Produce,Tofu,6993.60000000
+Condiments,"Gula Malacca",6887.55000000
+Beverages,"Steeleye Stout",6289.20000000
+Seafood,"Nord-Ost Matjeshering",6280.05000000
+Beverages,"Outback Lager",6240.00000000
+"Dairy Products","Queso Cabrales",5955.60000000
+Confections,"Sir Rodney's Scones",5766.00000000
+Condiments,"Chef Anton's Cajun Seasoning",5737.60000000
+Grains/Cereals,"Singaporean Hokkien Fried Mee",5726.00000000
+Condiments,"Original Frankfurter grne Soe",5327.40000000
+Beverages,Chai,5295.60000000
+Confections,"Scottish Longbreads",5120.00000000
+Beverages,"Chartreuse verte",4928.40000000
+Seafood,"Jack's New England Clam Chowder",4823.50000000
+Condiments,"Northwoods Cranberry Sauce",4560.00000000
+Beverages,"Rhnbru Klosterbier",4457.80000000
+Grains/Cereals,"Gustaf's Knckebrd",4338.60000000
+Seafood,"Rd Kaviar",3720.00000000
+Seafood,"Rogede sild",3667.00000000
+Seafood,Spegesild,3348.00000000
+Meat/Poultry,Tourtire,3318.40000000
+Confections,"Zaanse koeken",3192.00000000
+Confections,Maxilaku,3160.00000000
+"Dairy Products","Mascarpone Fabioli",3136.00000000
+Condiments,"Louisiana Hot Spiced Okra",3094.00000000
+Grains/Cereals,Tunnbrd,2680.20000000
+Confections,"Teatime Chocolate Biscuits",2531.10000000
+Condiments,"Grandma's Boysenberry Spread",2500.00000000
+Seafood,"Escargots de Bourgogne",2345.25000000
+Grains/Cereals,"Ravioli Angelo",2281.50000000
+Confections,"Valkoinen suklaa",2226.25000000
+Beverages,"Sasquatch Ale",2100.00000000
+Grains/Cereals,"Filo Mix",2086.00000000
+Confections,"NuNuCa Nu-Nougat-Creme",1794.80000000
+Condiments,"Aniseed Syrup",1760.00000000
+Beverages,"Guaran Fantstica",1666.80000000
+Condiments,"Genen Shouyu",1503.50000000
+Confections,Chocolade,1440.75000000
+Beverages,"Laughing Lumberjack Lager",910.00000000
+Produce,"Longlife Tofu",888.00000000
+"Dairy Products",Geitost,814.50000000
+Seafood,Konbu,776.40000000
+Seafood,"Gravad lax",676.00000000
+Condiments,"Chef Anton's Gumbo Mix",405.65000000
+
+------------------------------------------------------------------------------------------------
+
+-- 4. List all purchases made in 1997:
+
+CustomerID,ProductName,Amount
+HUNGO,"Nord-Ost Matjeshering",372.6000
+HUNGO,"Perth Pasties",524.0000
+HUNGO,"Camembert Pierrot",163.2000
+HUNGO,"Outback Lager",360.0000
+PICCO,Gudbrandsdalsost,1440.0000
+SAVEA,Chang,380.0000
+SAVEA,Tofu,781.2000
+SAVEA,"NuNuCa Nu-Nougat-Creme",78.4000
+SAVEA,"Gumbr Gummibrchen",1743.0000
+SAVEA,"Gorgonzola Telino",320.0000
+HUNGC,Konbu,48.0000
+HUNGC,"Tarte au sucre",394.0000
+HILAA,Spegesild,268.8000
+HILAA,"Perth Pasties",1834.0000
+HILAA,Gudbrandsdalsost,230.4000
+FRANK,Tunnbrd,288.0000
+FRANK,Flotemysost,1032.0000
+FRANK,"Mozzarella di Giovanni",583.8000
+PRINI,"Sir Rodney's Scones",80.0000
+PRINI,"Manjimup Dried Apples",763.2000
+SAVEA,"Steeleye Stout",432.0000
+SAVEA,"Pt chinois",2304.0000
+VAFFE,"Scottish Longbreads",600.0000
+VAFFE,Flotemysost,516.0000
+VAFFE,Lakkalikri,504.0000
+VAFFE,"Original Frankfurter grne Soe",145.6000
+EASTC,"Thringer Rostbratwurst",2079.0000
+EASTC,"Steeleye Stout",504.0000
+EASTC,Maxilaku,480.0000
+RATTC,"Nord-Ost Matjeshering",372.6000
+RATTC,"Gnocchi di nonna Alice",2128.0000
+RATTC,"Louisiana Fiery Hot Pepper Sauce",336.0000
+RATTC,Flotemysost,1032.0000
+ERNSH,Tunnbrd,432.0000
+ERNSH,Vegie-spread,2281.5000
+ERNSH,Pavlova,291.9000
+ERNSH,Chocolade,714.0000
+MAGAA,"Gumbr Gummibrchen",747.0000
+MAGAA,"Singaporean Hokkien Fried Mee",448.0000
+MAGAA,Maxilaku,480.0000
+LINOD,"Aniseed Syrup",400.0000
+QUEEN,Chai,144.0000
+QUEEN,"Sir Rodney's Scones",240.0000
+QUEEN,"Rssle Sauerkraut",1528.8000
+QUEEN,"Inlagd Sill",76.0000
+QUEEN,"Boston Crab Meat",29.4000
+OTTIK,"Queso Cabrales",504.0000
+OTTIK,Gudbrandsdalsost,432.0000
+OTTIK,Flotemysost,258.0000
+FOLIG,"Gravad lax",208.0000
+FOLIG,Tourtire,35.4000
+FOLIG,"Tarte au sucre",1379.0000
+OCEAN,Tofu,223.2000
+OCEAN,"Sir Rodney's Scones",96.0000
+BOTTM,Geitost,98.0000
+BOTTM,"Raclette Courdavault",704.0000
+BOTTM,"Jack's New England Clam Chowder",192.5000
+BOTTM,"Gula Malacca",620.0000
+BOTTM,"Raclette Courdavault",396.0000
+WARTH,Tofu,372.0000
+LAMAI,Chai,345.6000
+LAMAI,"Tarte au sucre",1576.0000
+LAMAI,Lakkalikri,201.6000
+FAMIA,"Teatime Chocolate Biscuits",131.4000
+FAMIA,Geitost,100.0000
+HUNGC,"Alice Mutton",62.4000
+HUNGC,Geitost,40.0000
+WARTH,"Teatime Chocolate Biscuits",146.0000
+WARTH,"Perth Pasties",262.0000
+WARTH,"Ravioli Angelo",312.0000
+SIMOB,"Cte de Blaye",10540.0000
+SIMOB,Spegesild,19.2000
+SIMOB,"Scottish Longbreads",360.0000
+SIMOB,"Original Frankfurter grne Soe",364.0000
+QUICK,Chang,912.0000
+QUICK,"Zaanse koeken",418.0000
+QUICK,"Sirop d'rable",364.8000
+QUICK,"Longlife Tofu",120.0000
+RICSU,"Camembert Pierrot",1632.0000
+RICSU,Gudbrandsdalsost,576.0000
+WELLI,"Mishi Kobe Niku",1552.0000
+WELLI,Konbu,9.6000
+WELLI,"Outback Lager",96.0000
+WELLI,"Rd Kaviar",240.0000
+QUEDE,"Teatime Chocolate Biscuits",29.2000
+QUEDE,"Gumbr Gummibrchen",747.0000
+QUEDE,"Perth Pasties",393.0000
+QUEDE,"Original Frankfurter grne Soe",104.0000
+FRANS,"Gumbr Gummibrchen",49.8000
+GOURL,"Gorgonzola Telino",140.0000
+GOURL,"Raclette Courdavault",880.0000
+MEREP,"Steeleye Stout",864.0000
+MEREP,"Cte de Blaye",10329.2000
+MEREP,"Scottish Longbreads",300.0000
+LAMAI,"Pt chinois",192.0000
+LAMAI,Lakkalikri,288.0000
+GALED,"Gnocchi di nonna Alice",152.0000
+GALED,"Wimmers gute Semmelkndel",186.2000
+PICCO,Tofu,651.0000
+REGGC,Spegesild,192.0000
+HUNGO,"Valkoinen suklaa",520.0000
+HUNGO,Vegie-spread,1228.5000
+ERNSH,"Alice Mutton",1404.0000
+ERNSH,"Sir Rodney's Scones",400.0000
+ERNSH,"Gnocchi di nonna Alice",912.0000
+ERNSH,"Raclette Courdavault",3080.0000
+BOTTM,"Alice Mutton",1560.0000
+BOTTM,"Boston Crab Meat",735.0000
+BOTTM,"Zaanse koeken",228.0000
+SPLIR,"Gumbr Gummibrchen",249.0000
+SPLIR,Tourtire,236.0000
+PRINI,"Gnocchi di nonna Alice",851.2000
+FOLKO,"Queso Cabrales",100.8000
+FOLKO,Lakkalikri,259.2000
+CONSH,Chang,152.0000
+CONSH,"Gustaf's Knckebrd",201.6000
+CONSH,"Mozzarella di Giovanni",278.0000
+BLONP,Spegesild,48.0000
+BLONP,"Gnocchi di nonna Alice",1216.0000
+BLONP,"Wimmers gute Semmelkndel",798.0000
+BLONP,"Rhnbru Klosterbier",148.8000
+WARTH,"Perth Pasties",393.0000
+TOMSP,"Teatime Chocolate Biscuits",109.5000
+TOMSP,"Sasquatch Ale",224.0000
+TOMSP,"Ravioli Angelo",234.0000
+MEREP,"Queso Manchego La Pastora",456.0000
+MEREP,Pavlova,222.4000
+MEREP,"Wimmers gute Semmelkndel",159.6000
+MEREP,"Longlife Tofu",240.0000
+SAVEA,Chang,684.0000
+SAVEA,Pavlova,681.1000
+SAVEA,"Thringer Rostbratwurst",2376.0000
+SAVEA,"Sirop d'rable",2052.0000
+OLDWO,"Schoggi Schokolade",1755.0000
+ERNSH,"Queso Cabrales",504.0000
+ERNSH,Tourtire,472.0000
+ERNSH,"Louisiana Hot Spiced Okra",816.0000
+REGGC,"Queso Cabrales",100.8000
+REGGC,"Rssle Sauerkraut",436.8000
+BERGS,"Alice Mutton",312.0000
+BERGS,"Gumbr Gummibrchen",373.5000
+BERGS,"Steeleye Stout",115.2000
+BERGS,"Jack's New England Clam Chowder",231.0000
+BERGS,"Chartreuse verte",86.4000
+BERGS,Tourtire,88.5000
+TOMSP,"Teatime Chocolate Biscuits",87.6000
+TOMSP,"Guaran Fantstica",72.0000
+TOMSP,"Gorgonzola Telino",30.0000
+TOMSP,"Filo Mix",84.0000
+RICAR,"Teatime Chocolate Biscuits",292.0000
+RICAR,"Louisiana Fiery Hot Pepper Sauce",588.0000
+RICAR,Flotemysost,34.4000
+RANCH,"Gumbr Gummibrchen",149.4000
+RANCH,"Boston Crab Meat",294.0000
+BLONP,Ikura,347.2000
+BLONP,"Filo Mix",112.0000
+BLONP,"Tarte au sucre",1379.0000
+VICTE,Ikura,496.0000
+VICTE,Tourtire,35.4000
+QUICK,"Pt chinois",2304.0000
+QUICK,"Wimmers gute Semmelkndel",931.0000
+QUICK,"Louisiana Fiery Hot Pepper Sauce",470.4000
+QUICK,"Original Frankfurter grne Soe",572.0000
+SAVEA,"Rssle Sauerkraut",546.0000
+SAVEA,"Gula Malacca",1550.0000
+AROUT,Chocolade,153.0000
+AROUT,"Outback Lager",300.0000
+LAMAI,Pavlova,278.0000
+LAMAI,Geitost,40.0000
+LAMAI,Spegesild,96.0000
+WARTH,"Chartreuse verte",288.0000
+WARTH,"Perth Pasties",1310.0000
+WARTH,"Sirop d'rable",570.0000
+WARTH,Flotemysost,516.0000
+KOENE,"Sir Rodney's Scones",320.0000
+KOENE,Maxilaku,336.0000
+KOENE,"Raclette Courdavault",1584.0000
+SUPRD,"Gumbr Gummibrchen",747.0000
+SUPRD,"Rssle Sauerkraut",1092.0000
+SUPRD,"Ipoh Coffee",736.0000
+SUPRD,"Gnocchi di nonna Alice",456.0000
+SUPRD,Flotemysost,860.0000
+VICTE,"Uncle Bob's Organic Dried Pears",384.0000
+VICTE,Spegesild,192.0000
+VICTE,"Mozzarella di Giovanni",1112.0000
+FOLKO,"Scottish Longbreads",210.0000
+FOLKO,"Rhnbru Klosterbier",24.8000
+LILAS,"Sir Rodney's Scones",320.0000
+LILAS,"Nord-Ost Matjeshering",579.6000
+LILAS,"Pt chinois",1152.0000
+CONSH,Konbu,4.8000
+CONSH,Tunnbrd,151.2000
+SUPRD,"Teatime Chocolate Biscuits",153.3000
+SUPRD,"Singaporean Hokkien Fried Mee",560.0000
+FURIB,"Chef Anton's Cajun Seasoning",281.6000
+FURIB,"Ipoh Coffee",110.4000
+FURIB,"Gnocchi di nonna Alice",912.0000
+FURIB,"Camembert Pierrot",544.0000
+VAFFE,"Guaran Fantstica",90.0000
+VAFFE,"Thringer Rostbratwurst",1782.0000
+VAFFE,"Boston Crab Meat",294.0000
+VAFFE,"Rogede sild",228.0000
+VAFFE,"Valkoinen suklaa",325.0000
+COMMI,"Queso Cabrales",168.0000
+COMMI,Spegesild,48.0000
+MAGAA,"Guaran Fantstica",100.8000
+MAGAA,"NuNuCa Nu-Nougat-Creme",134.4000
+KOENE,"Nord-Ost Matjeshering",165.6000
+KOENE,"Ipoh Coffee",552.0000
+WHITC,Chang,608.0000
+WHITC,Pavlova,486.5000
+WHITC,"Gula Malacca",31.0000
+BONAP,"Carnarvon Tigers",1500.0000
+BONAP,Tunnbrd,108.0000
+BONAP,"Wimmers gute Semmelkndel",212.8000
+BSBEV,"Uncle Bob's Organic Dried Pears",720.0000
+BSBEV,"Gnocchi di nonna Alice",608.0000
+SEVES,"Guaran Fantstica",288.0000
+SEVES,"Manjimup Dried Apples",763.2000
+ISLAT,Geitost,24.0000
+ISLAT,Flotemysost,206.4000
+PERIC,Tofu,223.2000
+PERIC,"Rssle Sauerkraut",655.2000
+PERIC,"Boston Crab Meat",308.7000
+PERIC,"Rhnbru Klosterbier",62.0000
+SUPRD,"Gorgonzola Telino",350.0000
+SUPRD,"Louisiana Hot Spiced Okra",816.0000
+SUPRD,Lakkalikri,604.8000
+HILAA,"Pt chinois",38.4000
+HILAA,"Outback Lager",144.0000
+PRINI,Chai,216.0000
+PRINI,"Sir Rodney's Scones",168.0000
+PRINI,"Chartreuse verte",288.0000
+VICTE,Ikura,496.0000
+RATTC,"Cte de Blaye",6324.0000
+RATTC,"Perth Pasties",733.6000
+RATTC,"Raclette Courdavault",2640.0000
+RATTC,"Wimmers gute Semmelkndel",798.0000
+FOLIG,"Zaanse koeken",228.0000
+FOLIG,"Raclette Courdavault",528.0000
+RICAR,Maxilaku,384.0000
+RICAR,"Camembert Pierrot",1088.0000
+LAZYK,"Boston Crab Meat",147.0000
+WHITC,"Sasquatch Ale",392.0000
+WHITC,"Original Frankfurter grne Soe",312.0000
+BSBEV,"Sir Rodney's Scones",112.0000
+BSBEV,"Boston Crab Meat",147.0000
+BSBEV,"Manjimup Dried Apples",127.2000
+LINOD,Chang,304.0000
+LINOD,"Aniseed Syrup",160.0000
+LINOD,"Pt chinois",576.0000
+LINOD,"Outback Lager",720.0000
+HILAA,"Queso Cabrales",84.0000
+HILAA,"Manjimup Dried Apples",1060.0000
+HILAA,"Longlife Tofu",128.0000
+QUEEN,"Teatime Chocolate Biscuits",36.5000
+QUEEN,"Gumbr Gummibrchen",747.0000
+QUEEN,Tourtire,141.6000
+FRANK,"Raclette Courdavault",1320.0000
+FRANK,"Rd Kaviar",240.0000
+PICCO,"Queso Cabrales",252.0000
+PICCO,Pavlova,250.2000
+HILAA,"Raclette Courdavault",2640.0000
+HILAA,"Scottish Longbreads",300.0000
+HILAA,"Rhnbru Klosterbier",223.2000
+FURIB,"Gula Malacca",232.5000
+FURIB,"Original Frankfurter grne Soe",72.8000
+BOTTM,"NuNuCa Nu-Nougat-Creme",672.0000
+BOTTM,"Singaporean Hokkien Fried Mee",224.0000
+LAMAI,"Louisiana Fiery Hot Pepper Sauce",252.0000
+LAMAI,"Louisiana Hot Spiced Okra",136.0000
+LAMAI,Gudbrandsdalsost,288.0000
+COMMI,"Gnocchi di nonna Alice",912.0000
+LAUGB,Tunnbrd,72.0000
+LAUGB,"Jack's New England Clam Chowder",154.0000
+LAUGB,"Original Frankfurter grne Soe",52.0000
+TRADH,"Gorgonzola Telino",200.0000
+LEHMS,"Gnocchi di nonna Alice",425.6000
+LEHMS,"Mozzarella di Giovanni",695.0000
+LEHMS,"Original Frankfurter grne Soe",260.0000
+HILAA,"Guaran Fantstica",63.0000
+HILAA,"Boston Crab Meat",92.0000
+HILAA,"Singaporean Hokkien Fried Mee",420.0000
+LILAS,"Rssle Sauerkraut",912.0000
+LILAS,Maxilaku,500.0000
+LAMAI,"Genen Shouyu",186.0000
+LAMAI,"Rssle Sauerkraut",364.8000
+BLAUS,Tourtire,149.0000
+PERIC,"Rogede sild",199.5000
+PERIC,"Perth Pasties",196.8000
+PERIC,"Laughing Lumberjack Lager",420.0000
+HUNGO,Tofu,1627.5000
+HUNGO,"Louisiana Fiery Hot Pepper Sauce",421.0000
+WHITC,Chang,228.0000
+WHITC,"Sir Rodney's Scones",120.0000
+WHITC,"Perth Pasties",328.0000
+WHITC,"Sirop d'rable",712.5000
+MEREP,"Tarte au sucre",147.9000
+KOENE,"NuNuCa Nu-Nougat-Creme",252.0000
+KOENE,"Outback Lager",210.0000
+ANTON,"Ipoh Coffee",690.0000
+ANTON,Chocolade,191.2500
+OTTIK,Konbu,60.0000
+OTTIK,"Chartreuse verte",180.0000
+BLAUS,"Rssle Sauerkraut",136.8000
+SAVEA,"Thringer Rostbratwurst",4456.4400
+SAVEA,"Rhnbru Klosterbier",279.0000
+BONAP,"Chef Anton's Cajun Seasoning",1100.0000
+BONAP,"Uncle Bob's Organic Dried Pears",1500.0000
+BONAP,"Northwoods Cranberry Sauce",400.0000
+FAMIA,"Guaran Fantstica",45.0000
+FAMIA,Spegesild,108.0000
+FAMIA,"Zaanse koeken",57.0000
+FAMIA,"Camembert Pierrot",408.0000
+WANDK,"Sir Rodney's Scones",400.0000
+WANDK,"Mascarpone Fabioli",1600.0000
+WANDK,"Sirop d'rable",427.5000
+ERNSH,"Sir Rodney's Marmalade",3159.0000
+ERNSH,"Rssle Sauerkraut",1596.0000
+ERNSH,"Gnocchi di nonna Alice",2660.0000
+ERNSH,"Louisiana Fiery Hot Pepper Sauce",820.9500
+ERNSH,"Rhnbru Klosterbier",387.5000
+QUICK,"Mishi Kobe Niku",1552.0000
+QUICK,Pavlova,872.5000
+QUICK,"Schoggi Schokolade",5268.0000
+QUICK,Geitost,40.0000
+QUICK,"Camembert Pierrot",2856.0000
+HUNGO,"Carnarvon Tigers",1562.5000
+HUNGO,"Jack's New England Clam Chowder",772.0000
+HUNGO,"Singaporean Hokkien Fried Mee",280.0000
+NORTS,"Filo Mix",42.0000
+NORTS,"Raclette Courdavault",220.0000
+NORTS,"Outback Lager",90.0000
+TORTU,"Guaran Fantstica",22.5000
+TORTU,"Cte de Blaye",3952.5000
+TORTU,"Gula Malacca",175.0500
+CHOPS,Ikura,496.0000
+CHOPS,"Gnocchi di nonna Alice",1520.0000
+CHOPS,"Camembert Pierrot",340.0000
+SANTG,"Guaran Fantstica",36.0000
+SANTG,"Perth Pasties",164.0000
+CACTU,"Steeleye Stout",54.0000
+CACTU,"Jack's New England Clam Chowder",96.5000
+CACTU,"Scottish Longbreads",75.0000
+LEHMS,Chai,720.0000
+LEHMS,"Northwoods Cranberry Sauce",960.0000
+LEHMS,"Nord-Ost Matjeshering",517.8000
+LEHMS,"Boston Crab Meat",460.0000
+SEVES,"Alice Mutton",975.0000
+SEVES,"Sir Rodney's Marmalade",1215.0000
+SEVES,"Gravad lax",468.0000
+SEVES,"Jack's New England Clam Chowder",57.9000
+BERGS,Ikura,62.0000
+BERGS,"Nord-Ost Matjeshering",258.9000
+BERGS,"Ipoh Coffee",2760.0000
+BERGS,Tourtire,111.7500
+BONAP,"Inlagd Sill",570.0000
+BONAP,"Boston Crab Meat",276.0000
+WARTH,Chai,144.0000
+WARTH,Konbu,60.0000
+WARTH,"Gnocchi di nonna Alice",1140.0000
+QUICK,"Chef Anton's Cajun Seasoning",1100.0000
+QUICK,"Inlagd Sill",570.0000
+GREAL,"Queso Cabrales",63.0000
+GREAL,Geitost,20.0000
+GREAL,"Mozzarella di Giovanni",313.2000
+MAISD,"Pt chinois",336.0000
+MAISD,"Scottish Longbreads",250.0000
+MAISD,Gudbrandsdalsost,360.0000
+PICCO,"Alice Mutton",1560.0000
+PICCO,"Ipoh Coffee",1150.0000
+PICCO,"Sirop d'rable",570.0000
+PICCO,Lakkalikri,900.0000
+OCEAN,"Raclette Courdavault",110.0000
+EASTC,"Nord-Ost Matjeshering",388.3500
+EASTC,"Louisiana Hot Spiced Okra",408.0000
+FOLKO,"Chef Anton's Cajun Seasoning",1100.0000
+FOLKO,"Mozzarella di Giovanni",835.2000
+FOLKO,"Rd Kaviar",360.0000
+LEHMS,"Nord-Ost Matjeshering",258.9000
+LEHMS,"Boston Crab Meat",184.0000
+LEHMS,Tourtire,74.5000
+ANTON,"Queso Cabrales",1050.0000
+ANTON,"Boston Crab Meat",184.0000
+ANTON,"Ravioli Angelo",97.5000
+ANTON,"Raclette Courdavault",825.0000
+LEHMS,"Queso Manchego La Pastora",570.0000
+LEHMS,"Gorgonzola Telino",250.0000
+LEHMS,Geitost,75.0000
+LEHMS,"Camembert Pierrot",1190.0000
+RICSU,"Gorgonzola Telino",375.0000
+RICSU,"Manjimup Dried Apples",318.0000
+RICSU,"Escargots de Bourgogne",265.0000
+RICSU,"Mozzarella di Giovanni",730.8000
+RICSU,"Rd Kaviar",135.0000
+BSBEV,"Outback Lager",105.0000
+BSBEV,"Mozzarella di Giovanni",34.8000
+BSBEV,Konbu,48.0000
+BSBEV,"Sir Rodney's Scones",150.0000
+BSBEV,Geitost,37.5000
+BSBEV,Maxilaku,120.0000
+QUICK,"Aniseed Syrup",600.0000
+QUICK,"Gumbr Gummibrchen",1249.2000
+QUICK,"Cte de Blaye",7905.0000
+QUICK,"Scottish Longbreads",437.5000
+HANAR,"Guaran Fantstica",157.5000
+HANAR,"Cte de Blaye",1054.0000
+HANAR,"Louisiana Fiery Hot Pepper Sauce",757.8000
+HANAR,Flotemysost,193.5000
+KOENE,"Queso Cabrales",315.0000
+KOENE,Tourtire,178.8000
+LILAS,"Queso Manchego La Pastora",1140.0000
+LILAS,Tunnbrd,630.0000
+LONEP,"Rssle Sauerkraut",319.2000
+LONEP,"Laughing Lumberjack Lager",98.0000
+LAZYK,"Queso Cabrales",210.0000
+VICTE,"Uncle Bob's Organic Dried Pears",300.0000
+VICTE,"Steeleye Stout",540.0000
+VICTE,"Tarte au sucre",1972.0000
+SEVES,"Mascarpone Fabioli",768.0000
+SEVES,"Inlagd Sill",1140.0000
+TOMSP,"Sasquatch Ale",140.0000
+TOMSP,"Jack's New England Clam Chowder",135.1000
+QUICK,"Gorgonzola Telino",687.5000
+QUICK,"Rogede sild",950.0000
+QUICK,"Manjimup Dried Apples",2544.0000
+GODOS,"Alice Mutton",312.0000
+GODOS,"Teatime Chocolate Biscuits",92.0000
+GODOS,"Sir Rodney's Scones",60.0000
+GODOS,"Sirop d'rable",285.0000
+FURIB,Pavlova,698.0000
+FURIB,"Steeleye Stout",360.0000
+FURIB,"Gula Malacca",778.0000
+HILAA,Gudbrandsdalsost,648.0000
+HILAA,"Rhnbru Klosterbier",232.5000
+WARTH,"Queso Cabrales",315.0000
+WARTH,Pavlova,244.3000
+WARTH,"Gustaf's Knckebrd",504.0000
+WARTH,"Gorgonzola Telino",375.0000
+WARTH,"Steeleye Stout",108.0000
+OTTIK,Pavlova,523.5000
+OTTIK,Tunnbrd,180.0000
+OTTIK,"Tarte au sucre",986.0000
+OTTIK,"Original Frankfurter grne Soe",130.0000
+SAVEA,Tofu,697.5000
+SAVEA,"Teatime Chocolate Biscuits",322.0000
+SAVEA,"Guaran Fantstica",81.0000
+SAVEA,"Manjimup Dried Apples",1060.0000
+SAVEA,"Gnocchi di nonna Alice",1520.0000
+SIMOB,"Mozzarella di Giovanni",835.2000
+LEHMS,"Wimmers gute Semmelkndel",997.5000
+LEHMS,"Rhnbru Klosterbier",155.0000
+AROUT,"Zaanse koeken",237.5000
+AROUT,"Manjimup Dried Apples",1060.0000
+AROUT,"Filo Mix",210.0000
+AROUT,"Perth Pasties",590.4000
+AROUT,"Rd Kaviar",45.0000
+BLONP,"Jack's New England Clam Chowder",115.8000
+BLONP,"Pt chinois",432.0000
+FRANK,"Nord-Ost Matjeshering",517.8000
+FRANK,"Tarte au sucre",739.5000
+FOLKO,"Gula Malacca",194.5000
+FOLKO,"Manjimup Dried Apples",2650.0000
+REGGC,Geitost,50.0000
+REGGC,"Tarte au sucre",493.0000
+RICAR,"Inlagd Sill",475.0000
+RICAR,"Filo Mix",490.0000
+RATTC,"Alice Mutton",624.0000
+RATTC,"Gorgonzola Telino",75.0000
+RATTC,"Pt chinois",600.0000
+MEREP,"Guaran Fantstica",112.5000
+MEREP,"Wimmers gute Semmelkndel",598.5000
+BLONP,"Queso Cabrales",735.0000
+BLONP,"Carnarvon Tigers",1125.0000
+BLONP,Lakkalikri,180.0000
+HUNGO,"Gorgonzola Telino",750.0000
+HUNGO,"Manjimup Dried Apples",159.0000
+HUNGO,"Raclette Courdavault",2200.0000
+GALED,Ikura,155.0000
+RATTC,"Gorgonzola Telino",437.5000
+RATTC,Lakkalikri,540.0000
+MEREP,"Queso Cabrales",315.0000
+MEREP,"Gnocchi di nonna Alice",2280.0000
+ERNSH,Tofu,255.7500
+ERNSH,"Singaporean Hokkien Fried Mee",392.0000
+BERGS,Pavlova,209.4000
+BERGS,"Mascarpone Fabioli",320.0000
+BERGS,"Boston Crab Meat",920.0000
+BERGS,"Rhnbru Klosterbier",116.2500
+ANTON,"Alice Mutton",702.0000
+ANTON,"Sasquatch Ale",560.0000
+ANTON,"Perth Pasties",820.0000
+TRAIH,Geitost,35.0000
+TRAIH,"Boston Crab Meat",36.8000
+TRAIH,"Tarte au sucre",493.0000
+TRAIH,"Wimmers gute Semmelkndel",199.5000
+MORGK,"Raclette Courdavault",660.0000
+MORGK,Vegie-spread,263.4000
+MORGK,"Mozzarella di Giovanni",1044.0000
+MORGK,Lakkalikri,180.0000
+TORTU,Chai,180.0000
+TORTU,"Gorgonzola Telino",250.0000
+TORTU,"Gula Malacca",408.4500
+TRAIH,"Chartreuse verte",180.0000
+TRAIH,"Rhnbru Klosterbier",155.0000
+TRAIH,"Original Frankfurter grne Soe",234.0000
+BSBEV,"Steeleye Stout",360.0000
+BSBEV,"Ravioli Angelo",117.0000
+LETSS,"Genen Shouyu",155.0000
+LETSS,"Rhnbru Klosterbier",162.7500
+OTTIK,Tofu,348.7500
+OTTIK,"Jack's New England Clam Chowder",86.8500
+OTTIK,"Louisiana Fiery Hot Pepper Sauce",631.5000
+FAMIA,"Rhnbru Klosterbier",387.5000
+BLAUS,"Ravioli Angelo",78.0000
+BLAUS,Lakkalikri,252.0000
+WARTH,"Thringer Rostbratwurst",1237.9000
+WARTH,"Camembert Pierrot",816.0000
+WARTH,Gudbrandsdalsost,360.0000
+BLONP,"Gorgonzola Telino",625.0000
+WELLI,"Zaanse koeken",142.5000
+REGGC,"Filo Mix",28.0000
+QUEDE,"Gumbr Gummibrchen",187.3800
+QUEDE,"Steeleye Stout",360.0000
+QUEDE,"Original Frankfurter grne Soe",260.0000
+QUICK,"Carnarvon Tigers",2500.0000
+QUICK,"Singaporean Hokkien Fried Mee",1400.0000
+GREAL,"Steeleye Stout",72.0000
+MEREP,Chai,360.0000
+MEREP,"Original Frankfurter grne Soe",780.0000
+VAFFE,"Aniseed Syrup",140.0000
+VAFFE,"Uncle Bob's Organic Dried Pears",300.0000
+VAFFE,Tourtire,372.5000
+LEHMS,"Genen Shouyu",387.5000
+LEHMS,"Gumbr Gummibrchen",156.1500
+LEHMS,"Sir Rodney's Marmalade",1701.0000
+LEHMS,Gudbrandsdalsost,720.0000
+LEHMS,Lakkalikri,72.0000
+OLDWO,"Filo Mix",168.0000
+OLDWO,"Escargots de Bourgogne",397.5000
+ERNSH,"Steeleye Stout",540.0000
+ERNSH,"Sirop d'rable",3420.0000
+ERNSH,Gudbrandsdalsost,2340.0000
+WHITC,"Gnocchi di nonna Alice",190.0000
+WHITC,Vegie-spread,1053.6000
+WHITC,"Rhnbru Klosterbier",232.5000
+PICCO,"Guaran Fantstica",157.5000
+PICCO,"Ravioli Angelo",390.0000
+PICCO,"Louisiana Fiery Hot Pepper Sauce",252.6000
+RATTC,"Schoggi Schokolade",2195.0000
+RATTC,Flotemysost,193.5000
+BSBEV,"Tarte au sucre",493.0000
+HUNGC,Tourtire,29.8000
+HUNGC,"Rd Kaviar",450.0000
+HILAA,Konbu,360.0000
+HILAA,"Raclette Courdavault",1925.0000
+VAFFE,"Original Frankfurter grne Soe",65.0000
+SAVEA,"Gustaf's Knckebrd",1008.0000
+SAVEA,Maxilaku,500.0000
+FURIB,Chocolade,76.5000
+FURIB,Lakkalikri,180.0000
+MEREP,Pavlova,523.5000
+MEREP,"Raclette Courdavault",1100.0000
+MEREP,"Camembert Pierrot",2380.0000
+MEREP,Flotemysost,322.5000
+TRADH,"Chef Anton's Cajun Seasoning",440.0000
+TRADH,"Pt chinois",480.0000
+TRADH,"Tarte au sucre",493.0000
+SAVEA,"Uncle Bob's Organic Dried Pears",1350.0000
+SAVEA,"Alice Mutton",3900.0000
+SAVEA,Geitost,35.0000
+SAVEA,"Boston Crab Meat",772.8000
+SAVEA,"Mozzarella di Giovanni",417.6000
+TOMSP,"Gnocchi di nonna Alice",1064.0000
+DUMON,Chai,54.0000
+DUMON,Ikura,310.0000
+DUMON,"Sir Rodney's Scones",60.0000
+LAMAI,"Inlagd Sill",399.0000
+WOLZA,Chai,108.0000
+WOLZA,Chang,190.0000
+WOLZA,"Camembert Pierrot",510.0000
+SAVEA,Ikura,2170.0000
+SAVEA,"Inlagd Sill",1045.0000
+SAVEA,Maxilaku,360.0000
+SAVEA,"Camembert Pierrot",1360.0000
+SAVEA,Lakkalikri,1440.0000
+HILAA,Konbu,48.0000
+HILAA,"Rhnbru Klosterbier",310.0000
+BLAUS,"Queso Cabrales",294.0000
+BLAUS,"Sir Rodney's Scones",80.0000
+BLAUS,"Chartreuse verte",90.0000
+WILMK,"Pt chinois",120.0000
+GREAL,"Cte de Blaye",3952.5000
+GREAL,"Gnocchi di nonna Alice",532.0000
+GREAL,"Outback Lager",225.0000
+GREAL,Flotemysost,322.5000
+GREAL,"Raclette Courdavault",1650.0000
+MEREP,"Grandma's Boysenberry Spread",1750.0000
+MEREP,"Gnocchi di nonna Alice",760.0000
+MEREP,"Scottish Longbreads",187.5000
+MEREP,"Sir Rodney's Scones",420.0000
+MEREP,"Gustaf's Knckebrd",840.0000
+LAUGB,"Guaran Fantstica",22.5000
+LAUGB,"Filo Mix",35.0000
+ISLAT,"Teatime Chocolate Biscuits",46.0000
+ISLAT,Tunnbrd,90.0000
+ISLAT,"Outback Lager",300.0000
+ISLAT,Flotemysost,322.5000
+RICAR,Chang,380.0000
+RICAR,"Scottish Longbreads",225.0000
+FRANK,Tofu,488.2500
+FRANK,"Teatime Chocolate Biscuits",138.0000
+FRANK,"Sir Rodney's Scones",250.0000
+FRANK,"Guaran Fantstica",13.5000
+FRANK,"Steeleye Stout",540.0000
+THECR,"Rssle Sauerkraut",456.0000
+THECR,"Thringer Rostbratwurst",742.7400
+THECR,"Gula Malacca",194.5000
+ANATR,Tofu,69.7500
+ANATR,"Singaporean Hokkien Fried Mee",70.0000
+ANATR,"Camembert Pierrot",340.0000
+BERGS,"Perth Pasties",393.6000
+BERGS,"Camembert Pierrot",680.0000
+BERGS,Flotemysost,430.0000
+SAVEA,"Tarte au sucre",739.5000
+SAVEA,"Rd Kaviar",525.0000
+BLONP,Chai,450.0000
+GODOS,"Thringer Rostbratwurst",2475.8000
+GODOS,"Wimmers gute Semmelkndel",299.2500
+KOENE,"Pt chinois",288.0000
+KOENE,Lakkalikri,630.0000
+LAMAI,"Rhnbru Klosterbier",62.0000
+WANDK,Chang,570.0000
+WANDK,Geitost,50.0000
+ERNSH,"Queso Manchego La Pastora",1368.0000
+ERNSH,Konbu,78.0000
+ERNSH,"Gumbr Gummibrchen",1093.0500
+ERNSH,"Tarte au sucre",3944.0000
+FOLIG,"Uncle Bob's Organic Dried Pears",1050.0000
+FOLIG,"Carnarvon Tigers",3125.0000
+FOLIG,"Manjimup Dried Apples",795.0000
+FOLIG,"Rhnbru Klosterbier",15.5000
+MAGAA,"Chef Anton's Cajun Seasoning",220.0000
+MAGAA,"Chef Anton's Gumbo Mix",320.2500
+MAGAA,"Gustaf's Knckebrd",840.0000
+WARTH,"Chef Anton's Cajun Seasoning",550.0000
+WARTH,"Escargots de Bourgogne",79.5000
+QUEEN,"Queso Cabrales",210.0000
+QUEEN,"Valkoinen suklaa",406.2500
+QUEEN,"Gnocchi di nonna Alice",2280.0000
+LINOD,"Rogede sild",190.0000
+LINOD,"Louisiana Fiery Hot Pepper Sauce",442.0500
+LINOD,"Mozzarella di Giovanni",2088.0000
+SANTG,"Carnarvon Tigers",500.0000
+WANDK,Gudbrandsdalsost,720.0000
+WANDK,"Outback Lager",225.0000
+HILAA,Chang,950.0000
+HILAA,"Boston Crab Meat",1104.0000
+SIMOB,"Sir Rodney's Scones",300.0000
+SIMOB,"Sirop d'rable",570.0000
+ALFKI,"Rssle Sauerkraut",684.0000
+ALFKI,"Chartreuse verte",378.0000
+ALFKI,Spegesild,24.0000
+WELLI,"Carnarvon Tigers",250.0000
+WELLI,"Ipoh Coffee",920.0000
+WELLI,Spegesild,252.0000
+HANAR,"Carnarvon Tigers",1250.0000
+HANAR,"Inlagd Sill",285.0000
+HUNGO,Chai,270.0000
+HUNGO,Ikura,558.0000
+HUNGO,Flotemysost,645.0000
+HUNGO,"Original Frankfurter grne Soe",455.0000
+QUEDE,"Teatime Chocolate Biscuits",276.0000
+QUEDE,"Chartreuse verte",360.0000
+RICAR,"Gustaf's Knckebrd",315.0000
+RICAR,"Guaran Fantstica",67.5000
+MAISD,"Rssle Sauerkraut",912.0000
+MAISD,"Mozzarella di Giovanni",522.0000
+FAMIA,"Nord-Ost Matjeshering",776.7000
+FAMIA,"Perth Pasties",820.0000
+FAMIA,Tourtire,223.5000
+WANDK,"Teatime Chocolate Biscuits",110.4000
+WANDK,"Gustaf's Knckebrd",420.0000
+GOURL,"Nord-Ost Matjeshering",51.7800
+GOURL,"Singaporean Hokkien Fried Mee",280.0000
+FRANK,Pavlova,523.5000
+FRANK,"Camembert Pierrot",680.0000
+BERGS,"Chef Anton's Cajun Seasoning",264.0000
+BERGS,"Chartreuse verte",360.0000
+BERGS,Tourtire,44.7000
+REGGC,"Jack's New England Clam Chowder",193.0000
+GREAL,Tofu,69.7500
+GREAL,"Gula Malacca",544.6000
+GREAL,"Zaanse koeken",57.0000
+SAVEA,"Genen Shouyu",775.0000
+SAVEA,"Jack's New England Clam Chowder",231.6000
+SAVEA,Spegesild,540.0000
+SAVEA,"Zaanse koeken",95.0000
+SAVEA,"Gnocchi di nonna Alice",1710.0000
+SAVEA,"Camembert Pierrot",1020.0000
+QUICK,"Sir Rodney's Scones",600.0000
+QUICK,"Boston Crab Meat",1288.0000
+QUICK,"Camembert Pierrot",1870.0000
+QUICK,"Original Frankfurter grne Soe",910.0000
+QUEEN,"Gorgonzola Telino",250.0000
+QUEEN,"Boston Crab Meat",441.6000
+QUEEN,"Outback Lager",600.0000
+HUNGC,"Sir Rodney's Marmalade",1701.0000
+HUNGO,"Chartreuse verte",54.0000
+HUNGO,"Escargots de Bourgogne",649.2500
+LONEP,"Scottish Longbreads",125.0000
+BONAP,"Boston Crab Meat",552.0000
+BONAP,"Singaporean Hokkien Fried Mee",420.0000
+BONAP,"Manjimup Dried Apples",1060.0000
+FURIB,Ikura,744.0000
+FURIB,"Gnocchi di nonna Alice",456.0000
+FURIB,"Louisiana Fiery Hot Pepper Sauce",315.7500
+LONEP,"Manjimup Dried Apples",1060.0000
+LONEP,"Raclette Courdavault",55.0000
+LONEP,Lakkalikri,180.0000
+RICSU,"Thringer Rostbratwurst",4456.4400
+RICSU,"Louisiana Fiery Hot Pepper Sauce",210.5000
+ERNSH,Gudbrandsdalsost,1620.0000
+ERNSH,Flotemysost,301.0000
+WANDK,"Gorgonzola Telino",100.0000
+WANDK,"Pt chinois",96.0000
+WANDK,"Wimmers gute Semmelkndel",498.7500
+SIMOB,"Inlagd Sill",570.0000
+FRANK,Tunnbrd,288.0000
+FRANK,Spegesild,720.0000
+FRANK,"Laughing Lumberjack Lager",350.0000
+FRANK,"Rd Kaviar",750.0000
+FRANK,"Rhnbru Klosterbier",193.7500
+FRANR,Pavlova,174.5000
+FRANR,"Tarte au sucre",493.0000
+FRANR,"Louisiana Fiery Hot Pepper Sauce",252.6000
+BERGS,"Cte de Blaye",3952.5000
+BERGS,Flotemysost,258.0000
+WILMK,Pavlova,52.3500
+WILMK,"Singaporean Hokkien Fried Mee",84.0000
+WILMK,"Ipoh Coffee",276.0000
+ISLAT,Tunnbrd,45.0000
+FRANK,Tofu,697.5000
+FRANK,"Perth Pasties",328.0000
+FRANK,"Escargots de Bourgogne",397.5000
+TORTU,Ikura,62.0000
+TORTU,"Teatime Chocolate Biscuits",64.4000
+TORTU,"Gula Malacca",408.4500
+ANTON,"Gumbr Gummibrchen",936.9000
+ANTON,Geitost,20.0000
+SAVEA,"Queso Manchego La Pastora",3800.0000
+SAVEA,Geitost,75.0000
+SAVEA,"Jack's New England Clam Chowder",1158.0000
+SAVEA,Tourtire,223.5000
+BLONP,"Raclette Courdavault",660.0000
+OLDWO,Pavlova,872.5000
+OLDWO,"Gorgonzola Telino",250.0000
+OLDWO,"Singaporean Hokkien Fried Mee",560.0000
+GREAL,"Teatime Chocolate Biscuits",276.0000
+GREAL,"Sir Rodney's Scones",120.0000
+GREAL,"Wimmers gute Semmelkndel",931.0000
+ANTON,Geitost,75.0000
+ANTON,"Louisiana Hot Spiced Okra",68.0000
+ANTON,"Rhnbru Klosterbier",232.5000
+DUMON,"Filo Mix",63.0000
+OTTIK,"Boston Crab Meat",368.0000
+OTTIK,"Zaanse koeken",380.0000
+OTTIK,"Camembert Pierrot",1020.0000
+GOURL,Ikura,620.0000
+GOURL,"Jack's New England Clam Chowder",38.6000
+GOURL,"Zaanse koeken",142.5000
+PICCO,"Alice Mutton",1170.0000
+PICCO,"Gumbr Gummibrchen",468.4500
+HUNGO,"Mishi Kobe Niku",4850.0000
+HUNGO,"Thringer Rostbratwurst",1237.9000
+HUNGO,"Inlagd Sill",114.0000
+VAFFE,Ikura,558.0000
+VAFFE,"Rssle Sauerkraut",2736.0000
+VAFFE,"Sasquatch Ale",196.0000
+BERGS,Chai,630.0000
+HANAR,"Gnocchi di nonna Alice",760.0000
+HANAR,"Original Frankfurter grne Soe",390.0000
+QUICK,Chai,540.0000
+QUICK,"Thringer Rostbratwurst",4951.6000
+QUICK,"Ipoh Coffee",1840.0000
+QUICK,"Gula Malacca",466.8000
+QUICK,"Tarte au sucre",2366.4000
+ALFKI,Vegie-spread,878.0000
+WHITC,"Mishi Kobe Niku",582.0000
+WHITC,Tourtire,447.0000
+WHITC,Gudbrandsdalsost,1080.0000
+WHITC,"Rd Kaviar",225.0000
+QUICK,"Uncle Bob's Organic Dried Pears",2700.0000
+QUICK,"Raclette Courdavault",1375.0000
+QUICK,"Outback Lager",750.0000
+WILMK,"Northwoods Cranberry Sauce",400.0000
+WILMK,"Queso Manchego La Pastora",152.0000
+WILMK,"Guaran Fantstica",90.0000
+WHITC,"Alice Mutton",780.0000
+WHITC,Spegesild,216.0000
+LINOD,"Teatime Chocolate Biscuits",64.4000
+LINOD,"Steeleye Stout",162.0000
+LINOD,"Escargots de Bourgogne",397.5000
+LINOD,"Outback Lager",450.0000
+ERNSH,"Queso Cabrales",315.0000
+ERNSH,"Alice Mutton",312.0000
+ERNSH,"Thringer Rostbratwurst",1485.4800
+ERNSH,"Louisiana Fiery Hot Pepper Sauce",1368.2500
+ERNSH,"Outback Lager",120.0000
+MORGK,"Zaanse koeken",114.0000
+SAVEA,Chai,90.0000
+SAVEA,"Sasquatch Ale",168.0000
+SAVEA,"Scottish Longbreads",500.0000
+SAVEA,Flotemysost,1290.0000
+HUNGO,"Raclette Courdavault",2310.0000
+HUNGO,Flotemysost,430.0000
+HUNGO,Lakkalikri,630.0000
+ALFKI,"Aniseed Syrup",60.0000
+ALFKI,Lakkalikri,270.0000
+FOLKO,Chang,95.0000
+FOLKO,"Raclette Courdavault",1925.0000
+FOLKO,"Rd Kaviar",525.0000
+QUEEN,"Chef Anton's Cajun Seasoning",132.0000
+QUEEN,"Guaran Fantstica",157.5000
+QUEEN,Chocolade,306.0000
+HILAA,"Gorgonzola Telino",250.0000
+HILAA,"Mascarpone Fabioli",128.0000
+OLDWO,Pavlova,349.0000
+OLDWO,"Ipoh Coffee",1104.0000
+OLDWO,"Raclette Courdavault",440.0000
+AROUT,"Pt chinois",504.0000
+AROUT,"Ravioli Angelo",780.0000
+AROUT,"Outback Lager",420.0000
+THEBI,"Chef Anton's Gumbo Mix",85.4000
+THEBI,"Inlagd Sill",95.0000
+GOURL,"Northwoods Cranberry Sauce",1600.0000
+GOURL,"Manjimup Dried Apples",1484.0000
+GOURL,"Camembert Pierrot",340.0000
+FRANS,"Teatime Chocolate Biscuits",46.0000
+FRANS,"Zaanse koeken",47.5000
+SAVEA,"Teatime Chocolate Biscuits",110.4000
+SAVEA,"Jack's New England Clam Chowder",405.3000
+SAVEA,"Perth Pasties",3936.0000
+HUNGO,"Perth Pasties",98.4000
+HUNGO,"Gnocchi di nonna Alice",1140.0000
+SAVEA,Ikura,558.0000
+SAVEA,"Gumbr Gummibrchen",936.9000
+SAVEA,"Rogede sild",1045.0000
+SAVEA,Spegesild,288.0000
+SAVEA,Chang,570.0000
+SAVEA,"Alice Mutton",1053.0000
+SAVEA,"Zaanse koeken",475.0000
+SAVEA,"Gnocchi di nonna Alice",684.0000
+SAVEA,"Escargots de Bourgogne",159.0000
+BONAP,Ikura,651.0000
+BONAP,Flotemysost,645.0000
+RANCH,"Sir Rodney's Scones",50.0000
+RANCH,"Manjimup Dried Apples",371.0000
+RANCH,"Sirop d'rable",285.0000
+FRANK,"Sir Rodney's Scones",320.0000
+FRANK,Tourtire,111.7500
+FRANK,Gudbrandsdalsost,900.0000
+KOENE,"Queso Manchego La Pastora",1368.0000
+KOENE,Pavlova,349.0000
+KOENE,"Inlagd Sill",760.0000
+KOENE,"Tarte au sucre",986.0000
+LETSS,"Carnarvon Tigers",750.0000
+LETSS,"Nord-Ost Matjeshering",77.6700
+LETSS,Tourtire,298.0000
+QUEDE,"Steeleye Stout",378.0000
+QUEDE,Flotemysost,172.0000
+QUICK,"Gula Malacca",972.5000
+SAVEA,Chang,57.0000
+SAVEA,"Gorgonzola Telino",625.0000
+SAVEA,"Scottish Longbreads",562.5000
+SAVEA,"Rhnbru Klosterbier",325.5000
+WHITC,"Gumbr Gummibrchen",468.4500
+MEREP,Ikura,496.0000
+MEREP,"Sirop d'rable",142.5000
+FAMIA,"Jack's New England Clam Chowder",115.8000
+FAMIA,"Filo Mix",28.0000
+FAMIA,"Pt chinois",144.0000
+EASTC,"Chef Anton's Cajun Seasoning",550.0000
+EASTC,"Queso Cabrales",105.0000
+REGGC,"Alice Mutton",780.0000
+REGGC,"Gnocchi di nonna Alice",380.0000
+REGGC,"Raclette Courdavault",550.0000
+QUEEN,"Nord-Ost Matjeshering",388.3500
+QUEEN,"Boston Crab Meat",110.4000
+QUEEN,"Pt chinois",288.0000
+QUEEN,"Camembert Pierrot",510.0000
+LINOD,Chai,900.0000
+LINOD,"Sir Rodney's Scones",300.0000
+LINOD,"Valkoinen suklaa",650.0000
+BONAP,Pavlova,261.7500
+BONAP,"Gorgonzola Telino",37.5000
+BONAP,"Louisiana Fiery Hot Pepper Sauce",210.5000
+CHOPS,"Sir Rodney's Scones",400.0000
+CHOPS,"Manjimup Dried Apples",1590.0000
+BONAP,Lakkalikri,360.0000
+BERGS,Tofu,372.0000
+BERGS,"Rssle Sauerkraut",912.0000
+BERGS,"Filo Mix",175.0000
+GOURL,"Grandma's Boysenberry Spread",750.0000
+GOURL,"Nord-Ost Matjeshering",388.3500
+GOURL,Lakkalikri,360.0000
+LETSS,"Sirop d'rable",570.0000
+LETSS,"Original Frankfurter grne Soe",26.0000
+HUNGO,"Louisiana Fiery Hot Pepper Sauce",842.0000
+HUNGO,"Rhnbru Klosterbier",155.0000
+VINET,Konbu,24.0000
+VINET,"Jack's New England Clam Chowder",115.8000
+SPECD,Pavlova,52.3500
+VINET,"Inlagd Sill",114.0000
+VINET,"Filo Mix",126.0000
+WHITC,"Rssle Sauerkraut",228.0000
+WHITC,"Steeleye Stout",630.0000
+WHITC,"Rogede sild",380.0000
+WHITC,"Gnocchi di nonna Alice",532.0000
+AROUT,Chang,285.0000
+BOTTM,"Aniseed Syrup",200.0000
+BOTTM,"Camembert Pierrot",1700.0000
+BOTTM,"Mozzarella di Giovanni",1218.0000
+AROUT,Spegesild,336.0000
+VAFFE,"Boston Crab Meat",920.0000
+QUICK,"Carnarvon Tigers",1500.0000
+QUICK,"Gula Malacca",311.2000
+QUICK,"Raclette Courdavault",2475.0000
+QUICK,"Mozzarella di Giovanni",243.6000
+CHOPS,Konbu,36.0000
+CHOPS,"Singaporean Hokkien Fried Mee",392.0000
+CHOPS,"Tarte au sucre",443.7000
+CHOPS,Gudbrandsdalsost,1440.0000
+PICCO,"Gorgonzola Telino",100.0000
+PICCO,"Jack's New England Clam Chowder",337.7500
+PICCO,Vegie-spread,395.1000
+PICCO,Gudbrandsdalsost,1080.0000
+SAVEA,Tunnbrd,396.0000
+SAVEA,"Boston Crab Meat",736.0000
+SAVEA,"Gnocchi di nonna Alice",1064.0000
+ISLAT,"Gnocchi di nonna Alice",570.0000
+ISLAT,"Raclette Courdavault",330.0000
+ISLAT,Lakkalikri,180.0000
+WARTH,Tofu,116.2500
+WARTH,"Rogede sild",380.0000
+WARTH,"Raclette Courdavault",1375.0000
+RICSU,"Gumbr Gummibrchen",374.7600
+RICSU,"Nord-Ost Matjeshering",776.7000
+RICSU,"Valkoinen suklaa",325.0000
+RICSU,"Rd Kaviar",225.0000
+NORTS,Chai,144.0000
+NORTS,Gudbrandsdalsost,108.0000
+FRANS,"Rogede sild",38.0000
+FRANS,"Longlife Tofu",50.0000
+MAGAA,"Boston Crab Meat",55.2000
+BONAP,"Zaanse koeken",285.0000
+BONAP,"Gnocchi di nonna Alice",1140.0000
+BONAP,"Ravioli Angelo",273.0000
+BONAP,Gudbrandsdalsost,900.0000
+SPLIR,"Carnarvon Tigers",1312.5000
+SPLIR,"Inlagd Sill",380.0000
+SPLIR,"Scottish Longbreads",75.0000
+SPLIR,Gudbrandsdalsost,720.0000
+SAVEA,"Sasquatch Ale",420.0000
+SAVEA,"Raclette Courdavault",385.0000
+SAVEA,"Tarte au sucre",1479.0000
+SAVEA,"Wimmers gute Semmelkndel",798.0000
+RICSU,"Gumbr Gummibrchen",624.6000
+RICSU,"Filo Mix",420.0000
+RICSU,"Outback Lager",600.0000
+ANATR,"Mascarpone Fabioli",320.0000
+MAISD,"NuNuCa Nu-Nougat-Creme",168.0000
+MAISD,"Schoggi Schokolade",1756.0000
+MAISD,"Ipoh Coffee",1380.0000
+RATTC,"NuNuCa Nu-Nougat-Creme",490.0000
+RATTC,"Rhnbru Klosterbier",139.5000
+FOLKO,"Chartreuse verte",288.0000
+FOLKO,"Zaanse koeken",285.0000
+FOLKO,"Manjimup Dried Apples",1484.0000
+FOLKO,"Gnocchi di nonna Alice",2280.0000
+FOLIG,"Sir Rodney's Scones",400.0000
+FOLIG,"Gustaf's Knckebrd",126.0000
+FOLIG,"Guaran Fantstica",90.0000
+ERNSH,"Aniseed Syrup",200.0000
+ERNSH,"Chartreuse verte",2340.0000
+QUICK,"Louisiana Fiery Hot Pepper Sauce",1684.0000
+OTTIK,Chang,760.0000
+OTTIK,"Uncle Bob's Organic Dried Pears",1050.0000
+OTTIK,"Scottish Longbreads",500.0000
+SUPRD,"Singaporean Hokkien Fried Mee",28.0000
+AROUT,"Gustaf's Knckebrd",84.0000
+AROUT,"Gorgonzola Telino",625.0000
+AROUT,"Camembert Pierrot",510.0000
+AROUT,Flotemysost,258.0000
+VAFFE,"Jack's New England Clam Chowder",289.5000
+VAFFE,"Filo Mix",105.0000
+VAFFE,"Sirop d'rable",570.0000
+VAFFE,"Tarte au sucre",739.5000
+HANAR,"Queso Cabrales",315.0000
+LEHMS,"Thringer Rostbratwurst",2228.2200
+LEHMS,"Raclette Courdavault",1375.0000
+ERNSH,"Alice Mutton",1287.0000
+ERNSH,"Gorgonzola Telino",875.0000
+ERNSH,"Rhnbru Klosterbier",54.2500
+FOLKO,"Gorgonzola Telino",25.0000
+FOLKO,"Louisiana Hot Spiced Okra",850.0000
+THECR,Ikura,186.0000
+THECR,"Laughing Lumberjack Lager",42.0000
+ERNSH,"Gorgonzola Telino",200.0000
+ERNSH,"Singaporean Hokkien Fried Mee",168.0000
+ERNSH,"Rogede sild",256.5000
+ERNSH,"Manjimup Dried Apples",6360.0000
+BERGS,"Jack's New England Clam Chowder",96.5000
+LILAS,"Outback Lager",525.0000
+LILAS,"Original Frankfurter grne Soe",195.0000
+WARTH,Tourtire,22.3500
+WARTH,"Gnocchi di nonna Alice",760.0000
+WARTH,"Longlife Tofu",350.0000
+CACTU,"Gorgonzola Telino",12.5000
+HANAR,"Gorgonzola Telino",125.0000
+HANAR,"Cte de Blaye",1317.5000
+MAGAA,"Inlagd Sill",570.0000
+MAGAA,"Chartreuse verte",36.0000
+MAGAA,"Mozzarella di Giovanni",1044.0000
+GROSR,Ikura,310.0000
+GROSR,"Rhnbru Klosterbier",77.5000
+QUEEN,"Northwoods Cranberry Sauce",1200.0000
+QUEEN,"Nord-Ost Matjeshering",388.3500
+QUEEN,"Rhnbru Klosterbier",325.5000
+LAMAI,Chang,285.0000
+LAMAI,"Thringer Rostbratwurst",2475.8000
+FOLIG,"Carnarvon Tigers",1875.0000
+FOLIG,"Steeleye Stout",270.0000
+FOLIG,Vegie-spread,1317.0000
+FOLIG,"Scottish Longbreads",225.0000
+GOURL,"Uncle Bob's Organic Dried Pears",90.0000
+GOURL,"Gnocchi di nonna Alice",760.0000
+WOLZA,Chang,190.0000
+WOLZA,Tourtire,22.3500
+WOLZA,"Scottish Longbreads",187.5000
+BOLID,"Alice Mutton",1560.0000
+BOLID,"Thringer Rostbratwurst",2475.8000
+
+------------------------------------------------------------------------------------------------
+
+5. Category Sales for 1997
+SELECT * FROM `northwind`.`category sales for 1997`;
+
+CategoryName,CategorySales
+"Dairy Products",122970.20000000
+Beverages,108545.00000000
+Meat/Poultry,87648.12000000
+Confections,85682.19000000
+Seafood,69780.30000000
+Condiments,59588.00000000
+Grains/Cereals,59275.20000000
+Produce,55549.80000000
+
+------------------------------------------------------------------------------------------------
+
